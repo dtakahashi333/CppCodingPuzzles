@@ -1,0 +1,44 @@
+# Bazel specific
+/.bazel-out/
+/bazel-*
+/.build/
+build/
+.bazel/
+
+# Compiled files
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.class
+
+# Binary output files
+*.bin
+*.out
+*.d
+
+# Dependency cache
+/.bazel-deployment/
+/external/
+external/
+
+# Build artifacts
+*_spec_file
+*.log
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# System files
+*.swp
+*~
