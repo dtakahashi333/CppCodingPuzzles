@@ -67,3 +67,10 @@ cc_library(
     hdrs=["encryption.hpp"],
     visibility=["//test:__pkg__"],
 )
+
+cc_library(
+    name="bigger_is_greater",
+    srcs=["bigger_is_greater.cpp"],
+    hdrs=["bigger_is_greater.hpp"],
+    visibility=["//test:__pkg__"],
+)

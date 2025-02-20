@@ -175,3 +175,21 @@ cc_test(
         "//src:encryption",
     ],
 )
+
+cc_test(
+    name="test_bigger_is_greater",
+    srcs=["test_bigger_is_greater.cpp"],
+    data=glob([
+        "data/bigger_is_greater/*.txt",
+    ]),
+    copts=[
+        "-Iexternal/gtest/googletest/include",
+        "-Iexternal/gtest/googletest",
+    ],
+    deps=[
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+        "@bazel_tools//tools/cpp/runfiles",
+        "//src:bigger_is_greater",
+    ],
+)
